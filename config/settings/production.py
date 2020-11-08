@@ -20,10 +20,10 @@ ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["www.mytaskapp.co.za",
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'gfitaskapp$default',
-        'USER': 'gfitaskapp',
+        'NAME': 'chuck$gfitaskapp',
+        'USER': 'chuck',
         'PASSWORD': 'Garikayi101',
-        'HOST': 'gfitaskapp.mysql.pythonanywhere-services.com',
+        'HOST': 'chuck.mysql.pythonanywhere-services.com',
     }
 }
 
