@@ -1,0 +1,152 @@
+{% extends 'master_layout.html' %}
+
+{% load static %}
+
+{% block title %}
+Welcome | myTaskApp
+{% endblock title %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+    <div class="card card-primary">
+      <div class="card-header">
+        <h3 class="card-title">Welcome | myTaskApp</h3>
+
+        <div class="card-tools">
+          
+        </div>
+        <!-- /.card-tools -->
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
+        Welcome to the myTaskApp eServices system. To transact on this system you must have a valid myTaskApp customer username. Please contact our office to get the customer username and password. Please note that currently you can only view the progress of your task with us. 
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+    <div class="d-none" id="card-refresh-content">
+        The body of the card after card refresh
+    </div>
+  </div>
+</div>
+  <!-- /.col -->
+<div class="row">
+  <!-- /.col -->
+  <div class="col-md-6">
+    <div class="card card-default">
+      <div class="card-header">
+        <h3 class="card-title">
+          <i class="fas fa-users"></i>
+          User Registration & Login
+        </h3>
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
+        <div class="callout callout-danger">
+            <p>You can register on this website or you can get username and password from our office.</p>
+        </div>
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+  </div>
+
+  <div class="col-md-6">
+    <div class="card card-default">
+      <div class="card-header">
+        <h3 class="card-title">
+          <i class="fas fa-unlock-alt"></i>
+          Password Reset
+        </h3>
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
+        <div class="callout callout-danger">
+            <p>If you forgot your username and password, you can reset by clicking the password reset which you can find on the login page.</p>
+        </div>
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+  </div>
+  <!-- /.col -->
+</div>
+<!-- /.row -->
+<div class="row">
+  <div class="col-md-3">
+    <div class="card card-outline card-primary">
+      <div class="card-header">
+        <h3 class="card-title">All Tasks</h3>
+
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+          </button>
+        </div>
+        <!-- /.card-tools -->
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
+        A list of all the tasks.
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+  </div>
+  <!-- /.col -->
+  <div class="col-md-3">
+    <div class="card card-outline card-success">
+      <div class="card-header">
+        <h3 class="card-title">Tasks In Progress</h3>
+
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+          </button>
+        </div>
+        <!-- /.card-tools -->
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
+        All the tasks in progress.
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+  </div>
+  <!-- /.col -->
+  <div class="col-md-3">
+    <div class="card card-outline card-warning">
+      <div class="card-header">
+        <h3 class="card-title">Completed Tasks</h3>
+
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
+          </button>
+        </div>
+        <!-- /.card-tools -->
+      </div>
+      <!-- /.card-header -->
+      <div class="card-body">
+        Completed tasks not collected.
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+  </div>
+  <!-- /.col -->
+  <div class="col-md-3">
+    <div class="card card-outline card-danger">
+      <div class="card-header">
+        <h3 class="card-title">Service delivered & closed</h3>
+      </div>
+      <div class="card-body">
+        Task completed and closed.
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+  </div>
+  <!-- /.col -->
+</div>
+<!-- /.row -->
+{% endblock content %}

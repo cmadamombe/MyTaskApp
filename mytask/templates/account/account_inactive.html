@@ -1,0 +1,26 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Account Inactive" %}{% endblock %}
+
+{% block inner %}
+
+	<!-- /.panel -->
+    <div class="panel panel-default">
+	<!-- /.panel-heading -->
+    <div class="panel-heading">
+     <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
+     </div>
+     <!-- /.panel-heading -->
+     <div class="panel-body">
+
+ <p>{% trans "This account is inactive." %}</p>
+
+    </div>
+     <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+{% endblock %}
+

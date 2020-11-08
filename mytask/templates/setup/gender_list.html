@@ -1,0 +1,70 @@
+{% extends 'master_layout.html' %}
+{% load widget_tweaks %}
+{% block title %} View Genders {% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title"><i class="fas fa-venus-double"></i> View/Search Genders</h3>
+    <div class="card-tools">
+      <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+        <i class="fas fa-minus"></i></button>
+    </div>
+  </div>
+  <div class="card-body">
+  <form method="get">
+    <div class="well">
+      <div class="row">
+        <div class="form-group col-sm-8 col-md-3">
+          {{ filter.form.code.label_tag }}
+          {% render_field filter.form.code class="form-control" %}
+        </div>
+        <div class="form-group col-sm-8 col-md-6">
+          {{ filter.form.description.label_tag }}
+          {% render_field filter.form.description class="form-control" %}
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <span class="glyphicon glyphicon-search"></span> Search Genders
+      </button>
+    </div>
+  </form>
+   <br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Description</th>
+        <th>Created by</th>
+        <th>Created date</th>
+        <th>Modified by</th>
+        <th>modified date</th>
+        <th>Active</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for gender in filter.qs %}
+        <tr>
+          <td>{{ gender.code }}</td>
+          <td>{{ gender.description }}</td>
+          <td>{{ gender.created_by }}</td>
+          <td>{{ gender.created_date }}</td>
+          <td>{{ gender.modified_by }}</td>
+          <td>{{ gender.modified_date}}</td>
+          <td>{{ gender.is_active }}</td>
+        </tr>
+      {% empty %}
+        <tr>
+          <td colspan="7"><em class="text-muted">No records found!</em></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+  <p class="text-danger">Search all records in the database</p>
+</div>
+<!-- /.card-footer-->
+</div>
+<!-- /.card -->
+{% endblock %}

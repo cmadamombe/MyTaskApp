@@ -1,0 +1,87 @@
+{% extends 'master_layout.html' %}
+{% load widget_tweaks %}
+{% block title %} View Tasks {% endblock %}
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title"><i class="fas fa-tasks"></i> View/Search All Tasks</h3>
+    <div class="card-tools">
+      <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+        <i class="fas fa-minus"></i></button>
+    </div>
+  </div>
+  <div class="card-body">
+  <form method="get">
+    <div class="well">
+      <div class="row">
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.task_reference.label_tag }}
+          {% render_field filter.form.task_reference class="form-control" %}
+        </div>
+
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.title.label_tag }}
+          {% render_field filter.form.title class="form-control" %}
+        </div>
+
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.description.label_tag }}
+          {% render_field filter.form.description class="form-control" %}
+        </div>
+
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.assigned_to.label_tag }}
+          {% render_field filter.form.assigned_to class="form-control" %}
+        </div>
+
+        <div class="form-group col-sm-4 col-md-3">
+          {{ filter.form.task_owner.label_tag }}
+          {% render_field filter.form.task_owner class="form-control" %}
+        </div>
+
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <span class="glyphicon glyphicon-search"></span> Search tasks
+      </button>
+    </div>
+  </form>
+   <br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Reference</th>
+        <th>Task Title</th>
+        <th>Assigned To</th>
+        <th>Task Owner</th>
+        <th>Completion Date</th>
+        <th>Priority</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for task in filter.qs %}
+        <tr>
+          <td>{{ task.task_reference }}</td>
+          <td>{{ task.title }}</td>
+          <td>{{ task.assigned_to }}</td>
+          <td>{{ task.task_owner }}</td>
+          <td>{{ task.expected_completion_date }}</td>
+          <td>{{ task.priority }}</td>
+          <td>{{ task.status }}</td>
+        </tr>
+      {% empty %}
+        <tr>
+          <td colspan="7"><em class="text-muted">No records found!</em></td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+<!-- /.card-body -->
+<div class="card-footer">
+  <p class="text-danger">Search all tasks in the database</p>
+</div>
+<!-- /.card-footer-->
+</div>
+<!-- /.card -->
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "master_layout.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block title %}
+Title Set Up
+{% endblock title %}
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title"><i class="fas fa-user-alt"></i> Add Title</h3>
+
+    <div class="card-tools">
+      <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+        <i class="fas fa-minus"></i></button>
+    </div>
+  </div>
+  <div class="card-body">
+    <form method="POST" novalidate>
+      {% csrf_token %}
+      <div class="form-row">
+        <div class="form-group col-md-6 mb-0">
+            {{ form.code|as_crispy_field }}
+        </div>
+        <div class="form-group col-md-6 mb-0">
+            {{ form.description|as_crispy_field }}
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">{% trans "Add New Title Instance" %} &raquo;</button>
+    </form>
+  </div>
+  <!-- /.card-body -->
+  <div class="card-footer">
+    Add New | Title
+  </div>
+  <!-- /.card-footer-->
+</div>
+<!-- /.card -->
+{% endblock %}
