@@ -12,14 +12,19 @@ def completedtasks():
     return Task.objects.filter(status__code='Completed').count()
 
 @register.simple_tag
-def closedtasks():
-    return Task.objects.filter(status__code='Closed').count()
+def onholdtasks():
+    return Task.objects.filter(status__code='On Hold').count()
+
+@register.simple_tag
+def cancelledtasks():
+    return Task.objects.filter(status__code='Cancelled').count()
 
 @register.simple_tag
 def inprogresstasks():
-    return Task.objects.exclude(status__code='Closed').count()
+    return Task.objects.filter(status__code='In Progress').count()
+
 '''
 Django offers a powerful way to follow relationships in lookups, taking care of the SQL JOINs automatically behind the scenes.
 To span the relationships, use the field name of the the related fields accross the models, separated by double underscores,
-until you get to the field you want. 
+until you get to the field you want.
 '''

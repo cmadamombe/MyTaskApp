@@ -105,10 +105,10 @@
           {% if request.user.is_admin or request.user.is_employee %}
           <li class="nav-item">
             <a href="{% url 'main:user_dashboard' %}" class="nav-link">
-              <i class="nav-icon fas fa-tachometer"></i>
+              <i class="nav-icon fas fa-spinner"></i>
               <p>
                 Dashboard
-                <span class="right badge badge-danger">Dashboard</span>
+                <span class="badge badge-info right">Dashboard</span>
               </p>
             </a>
           </li>
@@ -120,7 +120,7 @@
               <i class="nav-icon fas fa-tasks"></i>
               <p>
                 Tasks
-                <span class="right badge badge-danger">Track Tasks</span>
+                <span class="badge badge-info right">Track Tasks</span>
               </p>
             </a>
           </li>
@@ -128,12 +128,12 @@
 
           {% if request.user.is_admin or request.user.is_employee %}
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-eye"></i>
               <p>
                 Tasks
                 <i class="fas fa-angle-left right"></i>
-                <span class="right badge badge-danger">0</span>
+                <span class="badge badge-info right">Task</span>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -153,12 +153,12 @@
           </li>
 
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-eye-slash"></i>
               <p>
                 Task Status
                 <i class="fas fa-angle-left right"></i>
-                <span class="right badge badge-danger">1</span>
+                <span class="badge badge-info right">View</span>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -177,7 +177,13 @@
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Closed Tasks</p>
+                  <p>Cancelled Tasks</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Tasks On Hold</p>
                 </a>
               </li>
             </ul>
@@ -191,7 +197,7 @@
               <p>
                 Employees
                 <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">2</span>
+                <span class="badge badge-info right">Manage</span>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -228,7 +234,7 @@
               <p>
                 Clients
                 <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">3</span>
+                <span class="badge badge-info right">Manage</span>
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -323,7 +329,7 @@
               <i class="nav-icon fas fa-plus-square"></i>
               <p>
                 Task
-                <span class="right badge badge-danger">Create Task</span>
+                <span class="right badge badge-danger">Add New</span>
               </p>
             </a>
           </li>
@@ -333,7 +339,7 @@
               <i class="nav-icon fas fa-question-circle"></i>
               <p>
                 Help
-                <span class="right badge badge-danger">Help</span>
+                <span class="right badge badge-danger">Get Help</span>
               </p>
             </a>
           </li>

@@ -16,6 +16,6 @@ class TaskAdmin(admin.ModelAdmin):
     #The fields that will be used to search the database
     search_fields = ["task_reference", "title","description", "task_owner"]
     #Field the database according to the selected fields by default
-    list_filter = ('assigned_to','priority')
+    list_filter = ('assigned_to','priority', 'status')
     #The results are in ascending order. To display results in descending order, use (-field_name e.g -user)
     ordering = ('date_task_created',)

@@ -2,10 +2,11 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Sign Up Closed | simspro.net" %}{% endblock %}
+{% block head_title %}{% trans "Sign Up Closed | MyTaskApp" %}{% endblock %}
 
 {% block content %}
-
+<div class="row">
+<div class="col-lg-8">
 <div class="card">
   <div class="card-header">
     <h3 class="card-title"><i class="fas fa-user-lock"></i> Sign up closed </h3>
@@ -13,30 +14,32 @@
     <div class="card-tools">
       <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
         <i class="fas fa-minus"></i></button>
-      <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
-        <i class="fas fa-times"></i></button>
     </div>
   </div>
   <div class="card-body">
       <div class="position-relative p-3 bg-gray" style="height: 180px">
         <div class="ribbon-wrapper ribbon-xl">
           <div class="ribbon bg-danger text-xl">
-           simspro
+           CLOSED!
           </div>
         </div>
-        <h2>The sign up is currently closed! </h2>
-        <li> If you are a student or staff member, please contract the school admin.</li>
+        <h1>The sign up is currently closed! </h1>
+
+        <li> Please contact our office to get a username & password.</li>
+        {% comment %}
         <li> If you are a parent/guadian, <a href="{{ signup_url }}">click here</a> to sign up for a new account.</li>
+        {% endcomment %}
       </div>
   </div>
   <!-- /.card-body -->
   <div class="card-footer">
-    Closed | simspro.net
+    Closed | MyTaskApp
   </div>
   <!-- /.card-footer-->
 </div>
 <!-- /.card -->
-
+</div>
+</div>
 {% endblock %}
 
 

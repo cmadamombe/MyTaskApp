@@ -41,7 +41,7 @@ def search_all_my_tasks(request):
     mytask_filter = TaskFilter(request.GET, queryset=mytask_list)
     return render(request, 'task/all_task_list.html', {'filter': mytask_filter})
 
-#Function based view to search the tasks in the database 
+#Function based view to search the tasks in the database
 def search_all_the_tasks(request):
     thetask_list = Task.objects.all()
     thetask_filter = TaskFilter(request.GET, queryset=thetask_list)
@@ -50,6 +50,6 @@ def search_all_the_tasks(request):
 #Function based view to search the tasks in the database that are in progress
 @login_required
 def search_all_tasks_in_progress(request):
-    tasks_in_progress_list = Task.objects.exclude(status__code='Closed')
+    tasks_in_progress_list = Task.objects.filter(status__code='In Progress')
     tasks_in_progress_list_filter = TaskFilter(request.GET, queryset=tasks_in_progress_list)
     return render(request, 'task/all_task_list.html', {'filter':  tasks_in_progress_list_filter})

@@ -15,16 +15,13 @@ Dashboard | myTaskApp
             <!-- small card -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>{% totaltasks %}</h3>
+                <h3>{% completedtasks %}</h3>
 
-                <p>All Tasks</p>
+                <p>Completed Tasks</p>
               </div>
               <div class="icon">
                 <i class="fas fa-tasks"></i>
               </div>
-              <p class="small-box-footer">
-                Total Recorded Tasks
-              </p>
             </div>
           </div>
           <!-- ./col -->
@@ -32,16 +29,13 @@ Dashboard | myTaskApp
             <!-- small card -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>{% completedtasks %}<sup style="font-size: 20px"></sup></h3>
+                <h3>{% inprogresstasks %}<sup style="font-size: 20px"></sup></h3>
 
-                <p>Completed Tasks</p>
+                <p>Tasks In Progress</p>
               </div>
               <div class="icon">
                 <i class="fas fa-tasks"></i>
               </div>
-              <p class="small-box-footer">
-                Total Tasks Completed
-              </p>
             </div>
           </div>
           <!-- ./col -->
@@ -49,16 +43,13 @@ Dashboard | myTaskApp
             <!-- small card -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>{% inprogresstasks %}</h3>
+                <h3>{% onholdtasks %}</h3>
 
-                <p>Tasks In Progress</p>
+                <p>Tasks On Hold</p>
               </div>
               <div class="icon">
                 <i class="fas fa-tasks"></i>
               </div>
-              <p class="small-box-footer">
-                Total Tasks In Progress
-              </p>
             </div>
           </div>
           <!-- ./col -->
@@ -66,16 +57,13 @@ Dashboard | myTaskApp
             <!-- small card -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>{% closedtasks %}</h3>
+                <h3>{% cancelledtasks %}</h3>
 
-                <p>Closed Tasks</p>
+                <p>Cancelled Tasks</p>
               </div>
               <div class="icon">
                 <i class="fas fa-tasks"></i>
               </div>
-              <p class="small-box-footer">
-                Total Delivered & Closed Tasks
-              </p>
             </div>
           </div>
           <!-- ./col -->

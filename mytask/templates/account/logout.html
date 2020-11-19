@@ -2,26 +2,25 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Sign Out | simspro.net" %}{% endblock %}
+{% block head_title %}{% trans "Sign Out | MyTaskApp" %}{% endblock %}
 
 {% block content %}
-
+<div class="row">
+<div class="col-lg-6">
 <div class="card">
   <div class="card-header">
-    <h3 class="card-title"><i class="fas fa-sign-out-alt"></i> Log out </h3> 
+    <h3 class="card-title"><i class="fas fa-sign-out-alt"></i> Log out </h3>
 
     <div class="card-tools">
       <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
         <i class="fas fa-minus"></i></button>
-      <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
-        <i class="fas fa-times"></i></button>
     </div>
   </div>
   <div class="card-body">
     <div class="alert alert-danger alert-dismissible">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
       <h5><i class="icon fas fa-exclamation-triangle"></i> Alert!</h5>
-      You will be signed out of the system. Are you sure you want to sign out? Please confirm!
+      You will be signed out of the system. Please confirm!
     </div>
     <form method="post" action="{% url 'account_logout' %}">
       {% csrf_token %}
@@ -31,14 +30,15 @@
       <button class="btn btn-primary" type="submit">{% trans 'Sign Out' %}</button>
     </form>
   </div>
-  <!-- /.card-body 
+  <!-- /.card-body
   <div class="card-footer">
     Footer
   </div>-->
   <!-- /.card-footer-->
 </div>
 <!-- /.card -->
-
+</div>
+</div>
 {% endblock %}
 
 
