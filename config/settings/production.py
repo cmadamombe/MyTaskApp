@@ -13,7 +13,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DJANGO_SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["www.mytaskapp.co.za", "mytaskapp.co.za"])
+ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", default=["www.mytaskapp.co.za", "mytaskapp.co.za", "chuck.pythonanywhere.com"])
 
 # DATABASES
 # ------------------------------------------------------------------------------
