@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="893c7424-e9a4-4b2f-8682-50e0b5ae3c79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mytask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mytask.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytask/task/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mytask/task/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytask/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mytask/users/models.py" afterDir="false" />
-    </list>
+    <list default="true" id="893c7424-e9a4-4b2f-8682-50e0b5ae3c79" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +39,7 @@
       <updated>1618848133588</updated>
       <workItem from="1618848135961" duration="472000" />
       <workItem from="1618848625861" duration="1013000" />
-      <workItem from="1618919243735" duration="6883000" />
+      <workItem from="1618919243735" duration="7185000" />
     </task>
     <servers />
   </component>
