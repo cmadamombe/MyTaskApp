@@ -11,7 +11,7 @@ SECRET_KEY = env(
     default="YiVon4vMAR7lpeIUsVT385iPEfyKV6QvMtvFl5BcNkWe9hV6nweizt6ssrNxjONG",
 )
 # https://docs.djangoproject.com/en/dev/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1", "gfitaskapp.herokuapp.com"]
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # CACHES
 # ------------------------------------------------------------------------------
@@ -36,7 +36,7 @@ EMAIL_BACKEND = env(
 INSTALLED_APPS = ["whitenoise.runserver_nostatic"] + INSTALLED_APPS  # noqa F405
 
 DATABASES = {
-    "default": env.db("DATABASE_URL", default="postgres://postgres:root@127.0.0.1:5433/gfitaskapp")
+    "default": env.db("DATABASE_URL", default="postgres://postgres:root@127.0.0.1:5432/mytaskapp")
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 

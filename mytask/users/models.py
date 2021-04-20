@@ -8,7 +8,7 @@ class User(AbstractUser):
     is_employee = models.BooleanField(default=False)
     is_client = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
-    is_active = models.BooleanField(default=True)
+    is_active = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
     middle_name = models.CharField(max_length=1000, blank=True, null=True, verbose_name='Middle Name')
 
