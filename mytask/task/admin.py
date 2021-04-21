@@ -12,7 +12,8 @@ class TaskAdmin(admin.ModelAdmin):
         }),
     )
     # Chooses the fields to display on the form
-    list_display = ["task_reference", "title", "description", "assigned_to", "priority", "task_owner", "date_task_created", "expected_completion_date", "status", "created_by", "created_date", "modified_by", "modified_date"]
+    #list_display = ["task_reference", "title", "description", "assigned_to", "priority", "task_owner", "date_task_created", "expected_completion_date", "status", "created_by", "created_date", "modified_by", "modified_date"]
+    list_display = ["task_reference", "title", "task_owner", "assigned_to", "priority"]
     #The fields that will be used to search the database
     #search_fields = ["task_reference", "title","description", "task_owner"]
     search_fields = ["task_reference", "title", "description"]
