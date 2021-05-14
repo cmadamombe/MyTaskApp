@@ -36,7 +36,14 @@ EMAIL_BACKEND = env(
 INSTALLED_APPS = ["whitenoise.runserver_nostatic"] + INSTALLED_APPS  # noqa F405
 
 DATABASES = {
-    "default": env.db("DATABASE_URL", default="postgres://postgres:root@127.0.0.1:5432/mytaskapp")
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'test_mytaskapp',
+        'USER': 'chuckygari@postgres2021',
+        'PASSWORD': '3Madastar',
+        'HOST': 'postgres2021.postgres.database.azure.com',
+        'PORT': '5432',
+    }
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
 

@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="893c7424-e9a4-4b2f-8682-50e0b5ae3c79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mytask/task/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mytask/task/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/local.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mytask/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mytask/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +28,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -43,7 +46,15 @@
       <workItem from="1618848135961" duration="472000" />
       <workItem from="1618848625861" duration="1013000" />
       <workItem from="1618919243735" duration="9214000" />
-      <workItem from="1618990922724" duration="1406000" />
+      <workItem from="1618990922724" duration="2892000" />
+      <workItem from="1620382711907" duration="1580000" />
+      <workItem from="1620387930758" duration="1005000" />
+      <workItem from="1620535611343" duration="63000" />
+      <workItem from="1620536684223" duration="11000" />
+      <workItem from="1620537056021" duration="60000" />
+      <workItem from="1620537569956" duration="156000" />
+      <workItem from="1620538239911" duration="56000" />
+      <workItem from="1620960844600" duration="1130000" />
     </task>
     <servers />
   </component>
